@@ -1,0 +1,36 @@
+## [Boj 8871] $Zadanie próbne 2$
+
+# 문제
+
+SKI'10 대회는 n개의 점수 반영 라운드와 1개의 연습 라운드로 구성됩니다. 대회 규정에 따라 각 라운드에서 반드시 2개의 문제가 출제된다고 가정합니다.
+
+점수 반영 라운드에서는 최소 2문제와 최대 3문제가 출제됩니다.
+연습 라운드에서는 항상 2문제가 출제됩니다. -> 최소 2 ~ 최대 3문제 가능
+
+# 접근방법
+
+라운드를 n으로 입력을 받아 최소 라운드당 진행 가능한 2개 그리고 3개로 나뉘어 각 최소 최대에 맞게 더해주면 될것 같다.
+
+# 풀이
+
+```
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        int sum = (n * 2) + 2;
+        int sum1 = (n * 3) + 3;
+
+        System.out.println(sum);
+        System.out.println(sum1);
+
+    }
+}
+```
+
+# 정리
+
